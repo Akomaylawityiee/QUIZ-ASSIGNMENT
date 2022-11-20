@@ -37,7 +37,7 @@ function check(){
     if (question7 == "B. To Add comment") {
 		correct++;
 }   
-    if (question8 == "B.Make a text bold") {
+    if (question8 == "B. Make a text bold") {
 		correct++;
 }   
     if (question9 == "B. It's for Paragraph") {
@@ -50,19 +50,24 @@ function check(){
 	
 	
 	
-	var messages = ["Well done!", "Hey! That's a good score", "Grades are just numbers" , "You really need to do better"];
+	var messages = ["Well done!", "Hey! That's a great score!", "At least it's done!" , "Grades are just numbers!" , "You can do better!"];
 	var score;
 
 	if (correct == 0) {
-		score = 3;
+		score = 4;
 	}
 
 	if (correct > 0 && correct < 5) {
+		score = 3;
+	}
+	
+        if (correct > 4 && correct < 7) {
 		score = 2;
 	}
 	
-    if (correct > 5 && correct < 9) {
+       if (correct > 6 && correct <  10) {
 		score = 1;
+	}
 
 	if (correct == 10) {
 		score = 0;
