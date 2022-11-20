@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Quiz Project</title>
+<link href ="BoogerAIDS.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "java.js"></script>
+
+</head>
+
+
+
+
+<body style="background-color:MediumSeaGreen;">
+
+<h1>Quiz 'to wag kang Tanga!</h1>
+
+
+<form id = "quiz" name = "quiz"> 
+
+
+<p class = "questions"> 1. What does HTML stands for?</p>
+
+<input type = "radio" id = "mc" name = "question1" value = "A. How To Make Lumpia"> A. How To Make Lumpia<br>
+<input type = "radio" id = "mc" name = "question1" value = "B. Hyper Text Markup Language"> B. Hyper Text Markup Language<br>
+<input type = "radio" id = "mc" name = "question1" value = "C. Hyper Text Mark Language"> C. Hyper Text Mark Language<br>
+<input type = "radio" id = "mc" name = "question1" value = "D. Hey Too Much Layout"> D. Hey Too Much Layout<br>
+
+
+<p class = "questions">2. In HTML color names, what color is this code #000000?</p>
+
+<input type = "radio" id = "mc" name = "question2" value = "A. White"> A. White<br>
+<input type = "radio" id = "mc" name = "question2" value = "B. Black"> B. Black<br>
+<input type = "radio" id = "mc" name = "question2" value = "C. Dark Blue"> C. Dark Blue<br>
+<input type = "radio" id = "mc" name = "question2" value = "D. Red"> D. Heartford<br>
+
+
+<p class = "questions">3. What does CSS stands for? </p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Cascading Share Sheets"> Cascading Share Sheets<br>
+<input type = "radio" id = "mc" name = "question3" value = "Cascading Style Sheets"> Cascading Style Sheets<br>
+<input type = "radio" id = "mc" name = "question3" value = "Common Style Share"> Common Style Share<br>
+<input type = "radio" id = "mc" name = "question3" value = "Complicated Style Sheets"> Complicated Style Sheets<br>
+
+
+<p class = "questions">4. It describes the structure of a Webpage.</p>
+
+<input type = "radio" id = "mc" name = "question4" value = "A. CSS"> A. CSS<br>
+<input type = "radio" id = "mc" name = "question4" value = "B. HTML"> B. HTML<br>
+<input type = "radio" id = "mc" name = "question4" value = "C. Javascipt"> C. Javascipt<br>
+<input type = "radio" id = "mc" name = "question4" value = "D. Python"> D. Python<br>
+
+
+<p class = "questions">5. It describes how HTML elements are to be displayed on screen, paper, or in other media.</p>
+
+<input type = "radio" id = "mc" name = "question5" value = "A. Javascript"> A. Javascript<br>
+<input type = "radio" id = "mc" name = "question5" value = "B. CSS"> B. CSS<br>
+<input type = "radio" id = "mc" name = "question5" value = "C. SQL"> C. SQL<br>
+<input type = "radio" id = "mc" name = "question5" value = "D. HTML"> D. HTML<br>
+
+
+<p class = "questions">6. Can the Notepad app be use for HTML?</p>
+
+<input type = "radio" id = "mc" name = "question6" value = "A. No"> A. No<br>
+<input type = "radio" id = "mc" name = "question6" value = "B. Yes"> B. Yes<br>
+<input type = "radio" id = "mc" name = "question6" value = "C. Maybe"> C. Maybe<br>
+<input type = "radio" id = "mc" name = "question6" value = "D. I don't care"> D. I don't care<br>
+
+
+<p class = "questions">7. What is the function of this code <!-- This is a comment --> ?</p>
+
+<input type = "radio" id = "mc" name = "question7" value = "A. To Add image"> A. To Add image<br>
+<input type = "radio" id = "mc" name = "question7" value = "B. To Add comment"> B. To Add comment<br>
+<input type = "radio" id = "mc" name = "question7" value = "C. To Add paragraph"> C. To Add paragraph<br>
+<input type = "radio" id = "mc" name = "question7" value = "D. To Add life"> D. To Add life<br>
+
+
+<p class = "questions">8. What does the code open parenthesis b close parenthesis do? </p>
+
+<input type = "radio" id = "mc" name = "question8" value = "A. Add invisible comment"> A.Add invisible comment <br>
+<input type = "radio" id = "mc" name = "question8" value = "B. Make a text bold"> B.Make a text bold <br>
+<input type = "radio" id = "mc" name = "question8" value = "C. Do a behind text picture"> C.Do a behind text picture <br>
+<input type = "radio" id = "mc" name = "question8" value = "D. It does nothing"> D.It does nothing <br>
+
+
+<p class = "questions">9. What does the code <p> </p> do?</p>
+
+<input type = "radio" id = "mc" name = "question9" value = "A. It's for Page title"> A. It's for Page title<br>
+<input type = "radio" id = "mc" name = "question9" value = "B. It's for Paragraph"> B. It's for Paragraph<br>
+<input type = "radio" id = "mc" name = "question9" value = "C. It's for Potential text change"> C. It's for Potential text change<br>
+<input type = "radio" id = "mc" name = "question9" value = "D. It's for Page Heading"> D. It's for Page Heading<br>
+
+
+<p class = "questions">10. It is the language we use to style an HTML document.</p>
+
+<input type = "radio" id = "mc" name = "question10" value = "A. C"> A. C<br>
+<input type = "radio" id = "mc" name = "question10" value = "B. CSS"> B. CSS<br>
+<input type = "radio" id = "mc" name = "question10" value = "C. English"> C. English<br>
+<input type = "radio" id = "mc" name = "question10" value = "D. SQL"> D. SQL<br>
+
+
+
+
+
+
+<input id = "button" type = "button" value = "I had enough of this!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit"> 
+<p id = "number_correct"></p>
+<p id = "result"></p>
+
+</div>
+
+</html>
+
+</body> 
+
+
